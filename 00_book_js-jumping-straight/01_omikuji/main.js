@@ -21,11 +21,9 @@ function omikujiPlay() {
   if (result === "もう一回") {
     resultDisplay.textContent =
       "もう一回引けるよ！下のボタンを押してね！";
-
     oneMoreBtn.classList.add("is-show");
   } else {
     resultDisplay.textContent = result;
-
     oneMoreBtn.classList.remove("is-show");
   }
 }
