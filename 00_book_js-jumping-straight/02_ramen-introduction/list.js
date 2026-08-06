@@ -79,8 +79,6 @@ const misoRamen = [
   }
 ];
 
-
-
 const niboshiRamen = [
   {
     name : '陽はまたのぼる',
@@ -125,309 +123,309 @@ const niboshiRamen = [
 ];
 
 
-const Ramen = [
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  }
-];
+// const Ramen = [
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   }
+// ];
 
 
-const Ramen = [
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  }
-];
+// const Ramen = [
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   }
+// ];
 
 
-const Ramen = [
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  }
-];
+// const Ramen = [
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   }
+// ];
 
 
-const Ramen = [
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  }
-];
+// const Ramen = [
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   }
+// ];
 
 
-const Ramen = [
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  }
-];
+// const Ramen = [
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   }
+// ];
 
 
-const Ramen = [
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  }
-];
+// const Ramen = [
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   }
+// ];
 
 
-const Ramen = [
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  }
-];
+// const Ramen = [
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   },
+//   {
+//     name : '',
+//     station : '',
+//     map : ''
+//   }
+// ];
