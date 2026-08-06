@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>01_omikuji | おみくじプログラム</title>
 </head>
+
 <body>
+  <style>
+    .onemore-btn {
+      display: none;
+    }
+
+    .onemore-btn.is-show {
+      display: inline-block;
+    }
+  </style>
   <header>
-    
+
   </header>
 
 
@@ -21,17 +32,21 @@
         <p class="result-display"></p>
       </div>
       <div id="onemore-play">
-        <button class="onemore-btn"></button>
+        <button class="onemore-btn">もう一度おみくじを引く</button>
+      </div>
+      <div id="onemore-omikuji-result">
+        <p class="onemore-result-display"></p>
       </div>
     </div>
   </main>
 
 
   <footer>
-    ******
+
   </footer>
 
 
   <script src="main.js"></script>
 </body>
+
 </html>
