@@ -32,7 +32,7 @@ const soySourceRamen = [
   {
     name : 'らぁ麺やまぐち',
     station : '早稲田',
-    map : '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103799.21760529712!2d139.62897656967047!3d35.60983596718035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d183b9ab541%3A0x4f11f1f505f66ad9!2z44KJ44GB6bq644KE44G-44GQ44Gh!5e0!3m2!1sja!2sjp!4v1786008637833!5m2!1sja!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    map : '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103799.21760529712!2d139.62897656967047!3d35.60983596718035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d183b9ab541%3A0x4f11f1f505f66ad9!2z44KJ44GB6bq644KE44G-44GQ44Gh!5e0!3m2!1sja!2sjp!4v1786008637833!5m2!1sja!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>'
   },
   {
     name : '麺や晴心',
