@@ -172,42 +172,43 @@ const aburasobaRamen = [
     name : '油そば専門店のせ屋',
     station : '大久保',
     map : '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.0631801803224!2d139.69500021260612!3d35.70006282882274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d2ec9f82461%3A0x731e8051b66b109b!2z5rK544Gd44Gw5bCC6ZaA5bqX44Gu44Gb5bGL!5e0!3m2!1sja!2sjp!4v1786063989783!5m2!1sja!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>'
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
-  },
-  {
-    name : '',
-    station : '',
-    map : ''
   }
+  // ,
+  // {
+  //   name : '',
+  //   station : '',
+  //   map : ''
+  // },
+  // {
+  //   name : '',
+  //   station : '',
+  //   map : ''
+  // },
+  // {
+  //   name : '',
+  //   station : '',
+  //   map : ''
+  // },
+  // {
+  //   name : '',
+  //   station : '',
+  //   map : ''
+  // },
+  // {
+  //   name : '',
+  //   station : '',
+  //   map : ''
+  // },
+  // {
+  //   name : '',
+  //   station : '',
+  //   map : ''
+  // },
+  // {
+  //   name : '',
+  //   station : '',
+  //   map : ''
+  // }
 ];
 
 
