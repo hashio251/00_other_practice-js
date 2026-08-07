@@ -4,6 +4,7 @@
   --cream: #fff8e7;
   --brown: #4a3428;
   --white: #ffffff;
+  --map-bg: #c3ac98;
 }
 
 * {
@@ -27,10 +28,10 @@ main {
 /* ---------- title ---------- */
 
 h1 {
+  margin-bottom: 4rem;
   text-align: center;
   font-size: clamp(1.8rem, 4vw, 2.8rem);
   line-height: 1.5;
-  margin-bottom: 4rem;
 }
 
 .h1-span {
@@ -45,6 +46,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 5rem;
   gap: 5rem;
 }
 
@@ -61,28 +63,21 @@ h1 {
 }
 
 #robo-img img {
-  width: 350px;
+  width: 430px;
+  max-width: 100%;
   display: block;
+  animation: robot-float 2s ease-in-out infinite;
 }
 
-#robo-img img {
-  animation: float 2s ease-in-out infinite;
-}
-
-@keyframes float {
-
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-12px);
-  }
-
+@keyframes robot-float {
+  0%,
   100% {
     transform: translateY(0);
   }
 
+  50% {
+    transform: translateY(-14px);
+  }
 }
 
 /* ---------- balloon ---------- */
@@ -93,23 +88,45 @@ h1 {
 
 .hukidashi {
   position: relative;
-  padding: 1.8rem;
+
   min-height: 120px;
+  padding: 1.8rem;
 
   background: var(--white);
   border: 3px solid var(--brown);
   border-radius: 24px;
 
   box-shadow: 8px 8px 0 var(--sub-yellow);
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+
+  animation: balloon-float 2.5s ease-in-out infinite;
 }
 
-/* しっぽ */
+.hukidashi:hover {
+  transform: translateY(-5px) rotate(-1deg);
+  box-shadow: 11px 11px 0 var(--sub-yellow);
+}
+
+@keyframes balloon-float {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+
+  50% {
+    translate: 0 -6px;
+  }
+}
+
+/* ---------- balloon tail ---------- */
 
 .hukidashi::after {
   content: "";
 
   position: absolute;
-
   top: 50%;
   left: -15px;
 
@@ -139,28 +156,86 @@ h1 {
 
 /* ---------- map ---------- */
 
-#map-display {
+#map-container {
+  position: relative;
   width: 380px;
-  height: 260px;
+  padding: 1rem;
 
-  border-radius: 20px;
-  overflow: hidden;
-
-  background: #ddd;
+  background: #fff3d6;
+  border: 3px solid var(--brown);
+  border-radius: 28px;
 
   box-shadow: 8px 8px 0 var(--sub-yellow);
+}
+
+#map-container h2 {
+  margin-bottom: .8rem;
+  color: var(--main-red);
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+#map-container::before {
+  content: "📍";
+
+  position: absolute;
+  top: -18px;
+  left: -12px;
+
+  padding: .25rem .4rem;
+
+  background: var(--white);
+  border: 2px solid var(--brown);
+  border-radius: 50%;
+
+  font-size: 1.8rem;
+
+  transform: rotate(-20deg);
+
+  box-shadow: 3px 3px 0 var(--sub-yellow);
+
+  transition: transform .3s ease;
+}
+
+#map-container:hover::before {
+  transform: rotate(-30deg) scale(1.08);
+}
+
+#map-display {
+  width: 100%;
+  height: 260px;
+  padding: .6rem;
+
+  background: var(--white);
+
+  border: 4px solid var(--main-red);
+  border-radius: 22px;
+
+  overflow: hidden;
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+}
+
+#map-display:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(74, 52, 40, .15);
 }
 
 #map-display iframe {
   width: 100%;
   height: 100%;
+  display: block;
+
   border: none;
+  border-radius: 14px;
 }
+
 
 /* ---------- responsive ---------- */
 
 @media (max-width: 768px) {
-
   main {
     padding: 40px 16px;
   }
@@ -180,10 +255,11 @@ h1 {
   }
 
   #robo-img img {
-    width: 220px;
+    width: 300px;
   }
 
   #robo-comment,
+  #map-container,
   #map-display {
     width: min(100%, 380px);
   }
@@ -201,5 +277,4 @@ h1 {
 
     transform: translateX(-50%) rotate(45deg);
   }
-
 }
