@@ -142,6 +142,10 @@ h1 {
 }
 
 /* ---------- text ---------- */
+.p-span {
+  display: block;
+  margin-top: .3em;
+}
 
 .store-name {
   font-size: 1.5rem;
