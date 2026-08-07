@@ -17,6 +17,7 @@ body {
   background: var(--cream);
   color: var(--brown);
   font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: "DotGothic16", sans-serif;
 }
 
 main {
@@ -181,25 +182,16 @@ h1 {
 
 #map-container::before {
   content: "📍";
-
   position: absolute;
   top: -18px;
   left: -12px;
-
+  width: 5rem;
+  height: 5rem;
   padding: .25rem .4rem;
-
-  background: var(--white);
-  border: 2px solid var(--brown);
-  border-radius: 50%;
-
   font-size: 1.8rem;
-
   transform: rotate(-20deg);
-
-  box-shadow: 3px 3px 0 var(--sub-yellow);
-
-  transition: transform .3s ease;
 }
+
 
 #map-container:hover::before {
   transform: rotate(-30deg) scale(1.08);
@@ -238,6 +230,9 @@ h1 {
 
 
 /* ---------- select area ---------- */
+select#category, button.select-btn {
+  font-family: "DotGothic16", sans-serif;
+}
 
 #btn {
   display: flex;
@@ -253,6 +248,7 @@ h1 {
   border-radius: 24px;
 
   box-shadow: 8px 8px 0 var(--sub-yellow);
+  
 }
 
 /* ---------- select ---------- */
