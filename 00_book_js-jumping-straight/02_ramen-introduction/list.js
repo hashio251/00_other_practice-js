@@ -297,3 +297,12 @@ const aburasobaRamen = [
 //     map : ''
 //   }
 // ];
+
+
+export {
+  soySourceRamen,
+  misoRamen,
+  niboshiRamen,
+  saltRamen,
+  aburasobaRamen
+};
