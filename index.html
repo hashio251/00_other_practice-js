@@ -1,17 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>00_othor_practice_js | JavaScriptの練習作品ページ</title>
+
+  <meta name="description" content="JavaScriptの学習で制作した練習作品をまとめたページです。">
+
+  <title>JavaScript Practice | 練習作品一覧</title>
+
+  <link rel="stylesheet" href="./style.css">
 </head>
 
-
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
-</body>
 
+  <header class="header">
+    <div class="header__inner">
+      <a class="header__logo" href="./index.html">
+        JS Practice
+      </a>
+
+      <nav aria-label="メインナビゲーション">
+        <ul class="header__nav">
+          <li>
+            <a href="#works">Works</a>
+          </li>
+          <li>
+            <a href="https://github.com/hashio251" target="_blank" rel="noopener noreferrer">
+              GitHub
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero__inner">
+        <p class="hero__label">JavaScript Learning Collection</p>
+
+        <h1 class="hero__title">
+          JavaScript<br>
+          Practice Works
+        </h1>
+
+        <p class="hero__description">
+          JavaScriptの学習中に制作した、ミニアプリや練習作品をまとめています。
+          基本構文やDOM操作、イベント処理などを少しずつ学んでいます。
+        </p>
+
+        <a class="hero__button" href="#works">
+          作品を見る
+        </a>
+      </div>
+
+      <div class="hero__decoration" aria-hidden="true">
+        <span>{ }</span>
+        <span>=&gt;</span>
+        <span>JS</span>
+      </div>
+    </section>
+
+    <section class="works" id="works">
+      <div class="section-inner">
+
+        <div class="section-heading">
+          <p class="section-heading__label">My Works</p>
+          <h2 class="section-heading__title">練習作品</h2>
+        </div>
+
+        <div class="works__grid">
+
+          <article class="work-card">
+            <a class="work-card__link" href="./00_book_js-javascript-book/03_color-picker/index.html">
+              <div class="work-card__visual work-card__visual--color-picker">
+                <span class="work-card__number">01</span>
+                <span class="work-card__icon" aria-hidden="true">🎨</span>
+              </div>
+
+              <div class="work-card__body">
+                <p class="work-card__category">
+                  JavaScript / DOM
+                </p>
+
+                <h3 class="work-card__title">
+                  Color Picker
+                </h3>
+
+                <p class="work-card__description">
+                  選択した色を画面に反映する、カラーピッカーの練習作品です。
+                </p>
+
+                <span class="work-card__more">
+                  View project
+                  <span aria-hidden="true">→</span>
+                </span>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card">
+            <a class="work-card__link" href="./00_book_js-jumping-straight/01_omikuji/index.html">
+              <div class="work-card__visual work-card__visual--omikuji">
+                <span class="work-card__number">02</span>
+                <span class="work-card__icon" aria-hidden="true">⛩️</span>
+              </div>
+
+              <div class="work-card__body">
+                <p class="work-card__category">
+                  JavaScript / Random
+                </p>
+
+                <h3 class="work-card__title">
+                  Omikuji
+                </h3>
+
+                <p class="work-card__description">
+                  ランダムに結果を表示する、おみくじミニアプリです。
+                </p>
+
+                <span class="work-card__more">
+                  View project
+                  <span aria-hidden="true">→</span>
+                </span>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card">
+            <a class="work-card__link" href="./00_book_js-jumping-straight/02_ramen-introduction/index.html">
+              <div class="work-card__visual work-card__visual--ramen">
+                <span class="work-card__number">03</span>
+                <span class="work-card__icon" aria-hidden="true">🍜</span>
+              </div>
+
+              <div class="work-card__body">
+                <p class="work-card__category">
+                  JavaScript / Object
+                </p>
+
+                <h3 class="work-card__title">
+                  Ramen Introduction
+                </h3>
+
+                <p class="work-card__description">
+                  JavaScriptのオブジェクトを使用して、おすすめのラーメン店を紹介する作品です。
+                </p>
+
+                <span class="work-card__more">
+                  View project
+                  <span aria-hidden="true">→</span>
+                </span>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="learning">
+      <div class="section-inner learning__inner">
+        <div>
+          <p class="section-heading__label">Learning</p>
+          <h2 class="learning__title">
+            少しずつ、できることを増やしています。
+          </h2>
+        </div>
+
+        <ul class="learning__list">
+          <li>変数・配列・オブジェクト</li>
+          <li>条件分岐・繰り返し処理</li>
+          <li>関数・イベント処理</li>
+          <li>DOM操作</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>JavaScript Practice Works</p>
+      <small>&copy; Hashio</small>
+    </div>
+  </footer>
+
+</body>
 
 </html>
