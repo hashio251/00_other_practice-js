@@ -31,6 +31,11 @@ h1 {
   line-height: 1.5;
 }
 
+.h1-span {
+  display: block;
+  margin-top: .5em;
+}
+
 #robo-comment {
   display: flex;
   justify-content: center;
@@ -71,6 +76,7 @@ h1 {
 }
 
 #robo-img {
+  margin-top: 5rem;
   display: flex;
   justify-content: center;
 }
