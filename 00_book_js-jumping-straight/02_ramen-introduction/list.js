@@ -123,7 +123,7 @@ const niboshiRamen = [
 ];
 
 
-const soltRamen = [
+const saltRamen = [
   {
     name : 'ジャパニーズ ラーメン 五感',
     station : '池袋',
