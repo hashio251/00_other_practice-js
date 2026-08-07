@@ -7,106 +7,199 @@
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  min-height: 100vh;
-  background-color: var(--cream);
+  background: var(--cream);
   color: var(--brown);
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 main {
-  width: min(90%, 900px);
+  max-width: 1200px;
   margin: 0 auto;
   padding: 60px 20px;
-  text-align: center;
 }
 
+/* ---------- title ---------- */
+
 h1 {
-  margin-bottom: 50px;
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  text-align: center;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
   line-height: 1.5;
+  margin-bottom: 4rem;
 }
 
 .h1-span {
   display: block;
-  margin-top: .5em;
+  margin-top: .3em;
+  color: var(--main-red);
 }
 
-#robo-comment {
+/* ---------- layout ---------- */
+
+.main-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  align-items: center;
+  gap: 5rem;
+}
+
+.output-js {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* ---------- robot ---------- */
+
+#robo-img {
+  flex-shrink: 0;
+}
+
+#robo-img img {
+  width: 350px;
+  display: block;
+}
+
+#robo-img img {
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+}
+
+/* ---------- balloon ---------- */
+
+#robo-comment {
+  width: 380px;
 }
 
 .hukidashi {
   position: relative;
-  width: min(100%, 500px);
-  min-height: 100px;
-  margin: 0;
-  padding: 25px 30px;
+  padding: 1.8rem;
+  min-height: 120px;
 
-  background-color: var(--white);
+  background: var(--white);
   border: 3px solid var(--brown);
-  border-radius: 25px;
+  border-radius: 24px;
 
-  font-size: 1.1rem;
-  line-height: 1.8;
-
-  box-shadow: 6px 6px 0 var(--sub-yellow);
+  box-shadow: 8px 8px 0 var(--sub-yellow);
 }
+
+/* しっぽ */
 
 .hukidashi::after {
   content: "";
+
   position: absolute;
-  left: 50%;
-  bottom: -18px;
 
-  width: 28px;
-  height: 28px;
+  top: 50%;
+  left: -15px;
 
-  background-color: var(--white);
-  border-right: 3px solid var(--brown);
+  width: 26px;
+  height: 26px;
+
+  background: var(--white);
+
+  border-left: 3px solid var(--brown);
   border-bottom: 3px solid var(--brown);
 
-  transform: translateX(-50%) rotate(45deg);
+  transform: translateY(-50%) rotate(45deg);
 }
 
-#robo-img {
-  margin-top: 5rem;
-  display: flex;
-  justify-content: center;
+/* ---------- text ---------- */
+
+.store-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--main-red);
 }
 
-#robo-img img {
-  width: min(100%, 320px);
-  height: auto;
-  display: block;
-  transition: transform 0.3s ease;
+.store-station {
+  margin-top: 1rem;
+  font-size: 1rem;
 }
 
-#robo-img img:hover {
-  transform: translateY(-8px) rotate(-2deg);
+/* ---------- map ---------- */
+
+#map-display {
+  width: 380px;
+  height: 260px;
+
+  border-radius: 20px;
+  overflow: hidden;
+
+  background: #ddd;
+
+  box-shadow: 8px 8px 0 var(--sub-yellow);
 }
 
-@media (max-width: 600px) {
+#map-display iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 768px) {
+
   main {
-    padding: 40px 15px;
+    padding: 40px 16px;
   }
 
   h1 {
-    margin-bottom: 35px;
+    margin-bottom: 2.5rem;
   }
 
-  .hukidashi {
-    padding: 20px;
-    font-size: 1rem;
+  .main-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .output-js {
+    width: 100%;
+    align-items: center;
   }
 
   #robo-img img {
-    width: 240px;
+    width: 220px;
   }
+
+  #robo-comment,
+  #map-display {
+    width: min(100%, 380px);
+  }
+
+  /* 吹き出しのしっぽを下へ */
+
+  .hukidashi::after {
+    top: auto;
+    left: 50%;
+    bottom: -15px;
+
+    border-left: none;
+    border-right: 3px solid var(--brown);
+    border-bottom: 3px solid var(--brown);
+
+    transform: translateX(-50%) rotate(45deg);
+  }
+
 }
