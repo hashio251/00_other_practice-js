@@ -233,6 +233,94 @@ h1 {
 }
 
 
+/* ---------- select area ---------- */
+
+#btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  margin-top: 3rem;
+  padding: 1.2rem;
+
+  background: var(--white);
+  border: 3px solid var(--brown);
+  border-radius: 24px;
+
+  box-shadow: 8px 8px 0 var(--sub-yellow);
+}
+
+/* ---------- select ---------- */
+
+#category {
+  width: 100%;
+  max-width: 360px;
+
+  padding: .9rem 1rem;
+
+  background: #fff3d6;
+  color: var(--brown);
+
+  border: 3px solid var(--brown);
+  border-radius: 14px;
+
+  font-size: 1rem;
+
+  cursor: pointer;
+}
+
+#category:focus {
+  outline: 3px solid var(--sub-yellow);
+  outline-offset: 3px;
+}
+
+/* ---------- button ---------- */
+
+.select-btn {
+  flex-shrink: 0;
+
+  padding: .9rem 1.5rem;
+
+  background: var(--main-red);
+  color: var(--white);
+
+  border: 3px solid var(--brown);
+  border-radius: 14px;
+
+  font-size: 1rem;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  box-shadow: 4px 4px 0 var(--brown);
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease,
+    background .2s ease;
+}
+
+.select-btn:hover {
+  background: #c94034;
+
+  transform: translateY(-2px);
+
+  box-shadow: 6px 6px 0 var(--brown);
+}
+
+.select-btn:active {
+  transform: translateY(2px);
+
+  box-shadow: 2px 2px 0 var(--brown);
+}
+
+.select-btn:focus-visible {
+  outline: 3px solid var(--sub-yellow);
+  outline-offset: 3px;
+}
+
+
 /* ---------- responsive ---------- */
 
 @media (max-width: 768px) {
@@ -276,5 +364,20 @@ h1 {
     border-bottom: 3px solid var(--brown);
 
     transform: translateX(-50%) rotate(45deg);
+  }
+
+  #btn {
+    width: 100%;
+    max-width: 380px;
+  
+    flex-direction: column;
+  
+    margin-inline: auto;
+  }
+  
+  #category,
+  .select-btn {
+    width: 100%;
+    max-width: none;
   }
 }
