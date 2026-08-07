@@ -3,7 +3,7 @@ import * as ramen from "./list.js";
 const storeNameDisplay = document.querySelector('.store-name');
 const storeStationDisplay = document.querySelector('.store-station');
 const storeMapDisplay = document.querySelector('#map-display');
-const ramenCategory = document.querySelectorAll('#category');
+const ramenCategory = document.querySelector('#category');
 const okBtn = document.querySelector('.select-btn');
 
 
@@ -16,8 +16,9 @@ const ramenTaste = {
 };
 
 
-function getUserInfo() {
-  const selectedTaste = ramenTaste.value;
+function getUserWantInfo() {
+  // selectで選ばれたvalueを取得
+  const selectedTaste = ramenCategory.value;
 
   if (selectedTaste === "") {
     storeNameDisplay.textContent = '食べたいラーメンの種類を選択するロボ ♪';
@@ -25,15 +26,21 @@ function getUserInfo() {
   }
 
   // 選択された種類のラーメン一覧を取得
-  const randomIndex = ramenTaste[selectedTaste];
+  const selectedRamenList = ramenTaste[selectedTaste];
 
 
-  const randomCoiseStore =  Math.floor(Math.random() * selectedRamenList.length);
-  const selectedRamenList = selectedRamenList[randomIndex];
+  // ランダムな番号
+  const randomChoiceStore = Math.floor(Math.random() * selectedRamenList.length);
+  // 1店舗選ぶ
+  const selectedRamen = selectedRamenList[randomChoiceStore];
 
-  storeNameDisplay.textContent = selectedRamenList.name;
-  storeStationDisplay.textContent = selectedRamenList.station;
-  storeMapDisplay.innerHTML = selectedRamenList.map;
+  // 表示
+  storeNameDisplay.textContent = selectedRamen.name;
+  storeStationDisplay.textContent = `${selectedRamen.station}駅が最寄りロボ ♪`;
+  storeMapDisplay.innerHTML = selectedRamen.map;
+
+  isOnTextDisplay();
+
 }
 
-okBtn.addEventListener('click', getUserInfo);
+okBtn.addEventListener('click', getUserWantInfo);
