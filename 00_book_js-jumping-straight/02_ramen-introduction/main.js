@@ -38,9 +38,6 @@ function getUserWantInfo() {
   storeNameDisplay.textContent = selectedRamen.name;
   storeStationDisplay.textContent = `${selectedRamen.station}駅が最寄りロボ ♪`;
   storeMapDisplay.innerHTML = selectedRamen.map;
-
-  isOnTextDisplay();
-
 }
 
 okBtn.addEventListener('click', getUserWantInfo);
