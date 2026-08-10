@@ -226,6 +226,10 @@ h1 {
   border-radius: 14px;
 }
 
+div#mapDiv {
+  opacity: .8;
+}
+
 
 /* ---------- select area ---------- */
 select#category, button.select-btn {
