@@ -9,8 +9,7 @@ likeFoods.forEach(likeFood => {
 });
 likeFoods.push("apple", "orange");
 console.log(likeFoods);
-lastLength = likeFoods.length -1;
-likeFoods.pop(lastLength);
+likeFoods.pop();
 console.log(likeFoods);
 likeFoods.unshift("mango", "peach");
 console.log(likeFoods);
@@ -25,6 +24,17 @@ console.log(likeFoods);
 // 食べ物の配列から特定の食べ物を検索
 // includesを使って含まれているか確認
 // indexOfでインデックスを取得
+console.log(likeFoods.indexOf("mango"));
+console.log(likeFoods.indexOf("peach"));
+console.log(likeFoods.includes("a"));
+console.log(likeFoods.includes("ramen"));
+
+const likeMango = likeFoods.includes("mango");
+if (likeMango === true) {
+  console.log("I like mango too.");
+} else {
+  console.log("I like mango.");
+}
 
 
 
