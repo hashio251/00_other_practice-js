@@ -43,7 +43,20 @@ if (likeMango === true) {
 // 数値の配列を作成
 // for文で合計を計算
 // 平均を計算して表示
+const nums = [];
+for (let num = 1; num <= 1000; num += 3) {
+    nums.push(num);
+}
+console.log(nums);
 
+let sum = 0;
+for (let sumNum = nums[0]; sumNum < nums.length; sumNum++) {
+  sum += nums[sumNum];
+}
+console.log(sum);
+
+const avarage = sum / nums.length;
+console.log(avarage);
 
 
 
