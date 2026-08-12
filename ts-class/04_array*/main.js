@@ -64,6 +64,37 @@ console.log(avarage);
 // 数値の配列を用意
 // 最大値と最小値を見つける
 // （余裕があれば）昇順に並び替える
+const nums2 = [];
+for (let num2 = 0; num2 <= 500; num2 += 10) {
+  nums2.push(num2);
+}
+console.log(nums2);
+
+let bigNum = nums2[0];
+for (let bigIndex = 0; bigIndex < nums2.length; bigIndex++) {
+  if (nums2[bigIndex] > bigNum) {
+    bigNum = nums2[bigIndex];
+  }
+}
+console.log(`Big number is ${bigNum}`);
+
+  let minNum = nums2[0];
+  for (let minIndex = 0; minIndex < nums2.length; minIndex++) {
+    if (minNum > nums2[minIndex]) {
+      minNum = nums2[minIndex];
+    }
+  }
+console.log(`Min number is ${minNum}`);
+
+for (let h = 0; h < nums2.length; h++) {
+  for (let i = 0; i < nums2.length - 1; i++) {
+    if (nums2[i] > nums2[i + 1]) {
+      const temp = nums2[i];
+      nums2[i] = nums2[i + 1];
+      nums2[i + 1] = temp;
+    }
+  }
+}console.log(nums2);
 
 
 
