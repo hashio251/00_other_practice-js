@@ -14,7 +14,10 @@ likeFoods.pop(lastLength);
 console.log(likeFoods);
 likeFoods.unshift("mango", "peach");
 console.log(likeFoods);
-likeFoods
+likeFoods.shift();
+console.log(likeFoods);
+likeFoods.splice(1, 0, "rice");
+console.log(likeFoods);
 
 
 
