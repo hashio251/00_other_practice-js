@@ -103,7 +103,15 @@ for (let h = 0; h < nums2.length; h++) {
 // 果物の配列を作成
 // unshiftで先頭に果物を追加
 // shiftで先頭の果物を取り出して表示
-
+const fruits = [
+  "apple",
+  "banana",
+  "mango",
+  "orange",
+  "lemon",
+  "greap",
+  "strawberry"
+]
 
 
 
