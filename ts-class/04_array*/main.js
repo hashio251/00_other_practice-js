@@ -125,6 +125,11 @@ console.log(fruits);
 // 5つの数値の配列を用意
 // spliceを使ってインデックス2の要素を削除
 // spliceを使って新しい要素を任意の位置に挿入
+const numbers = [1, 10, 20, 30, 40];
+numbers.splice(2, 1);
+console.log(numbers);
+numbers.splice(3, 0, 32, 36);
+console.log(numbers);
 
 
 
