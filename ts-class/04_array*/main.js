@@ -110,8 +110,14 @@ const fruits = [
   "orange",
   "lemon",
   "greap",
-  "strawberry"
+  "strawberry",
+  "melon",
+  "warter melon"
 ]
+fruits.unshift("mikan", "blueberyy");
+console.log(fruits);
+fruits.shift();
+console.log(fruits);
 
 
 
